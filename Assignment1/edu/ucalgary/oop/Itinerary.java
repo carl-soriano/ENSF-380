@@ -29,3 +29,5 @@ public class Itinerary {
     // The third array holds formatted locations occurring in the year/month
     String[][][] byDate() {
     }
+
+}
