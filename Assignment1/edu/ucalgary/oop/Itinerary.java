@@ -11,17 +11,26 @@ public class Itinerary {
     // Returns a string in the format of:
     // value (key)
     public static String fmtString(String key, String value) {
+        String new_data = value + "(" + key + ")"; 
+        return new_data; 
     }
+
 
     // Constructor
     public Itinerary(String[][] myTrips) {
+         String itenerary_obj;  
+
     }
 
     // Getter
     public Trip[] getTrips() {
+        return trips; 
     }
 
     public String formatByArrival() {
+        
+
+
     }
 
     // The first array holds years (2021-2023).
