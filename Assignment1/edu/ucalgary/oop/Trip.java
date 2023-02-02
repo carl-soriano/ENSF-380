@@ -46,7 +46,7 @@ public class Trip {
     // Return a formatted string of key/value pairs, with commas
     // between each. See the output for an example.
     public String formatTrip() {
-        return this.getArrival() + " (Arrival), " + this.getDeparture() + " (Departure), " + this.getCity() + " (City), " + this.getCountry() + " (Country), "; 
+        return this.getArrival() + " (Arrival), " + this.getDeparture() + " (Departure), " + this.getCity() + " (City), " + this.getCountry() + " (Country)"; 
 
     }
 
@@ -72,22 +72,22 @@ public class Trip {
 
     // Setter
     public void setArrival(String date) {
-        date = this.arrival;
+        this.arrival = date;
     }
 
     // Setter
     public void setDeparture(String date) {
-        date = this.departure; 
+        this.departure = date; 
     }
 
     // Setter 
     public void setCity(String city) {
-        city = this.city;
+        this.city = city;
     }
 
     // Setter 
     public void setCountry(String country) {
-       country = this.country; 
+        this.country = country; 
     }
 
 }

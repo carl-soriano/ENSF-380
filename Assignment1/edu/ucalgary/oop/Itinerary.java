@@ -29,10 +29,41 @@ public class Itinerary {
     }
 
     public String formatByArrival() {
-       String newString = new StringBuilder();
-       String [][][] format = byDate(); 
-        
+        StringBuilder newString = new StringBuilder();
+        String[][][] format = byDate(); 
+
+        for(int i=0 ; i < format.length ; i++){
+            int year = i + 2021;
+            boolean hasYear = false;
+            for(int j=0 ; j < format[i].length ; j++){
+                boolean hasPlaces = false;
+                for(int k=0 ; k < format[i][j].length ; k++) {
+                    if(format[i][j][k] != null){
+                        hasPlaces = true;
+                        break;
+                    }
+                }
+                if (hasPlaces) {
+                    if (hasYear != true) {
+                    newString.append(year + " (Year)\n");
+                    hasYear = true;
+                    }
+                    newString.append("--" + (j + 1) + " (Month)\n");
+                    for(int k=0 ; k < format[i][j].length ; k++) {
+                        if(format[i][j][k] != null){
+                            newString.append("----" + format[i][j][k] + " (Place)\n");
+                }
+            }
+        }
     }
+}
+        newString.setLength(newString.length() - 1);    
+        return newString.toString();
+
+    }
+
+    
+    
 
     // The first array holds years (2021-2023).
     // The second array holds months. 
