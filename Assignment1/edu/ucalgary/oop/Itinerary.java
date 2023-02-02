@@ -15,11 +15,12 @@ public class Itinerary {
         return new_data; 
     }
 
-
-    // Constructor
+    // Constructor 
+    //Make each element in the given array, an object. 
     public Itinerary(String[][] myTrips) {
-         String itenerary_obj;  
-
+          for (int i = 0; i < myTrips.length ; i++){
+            trips[i] = new Trip(myTrips[i]); 
+          }
     }
 
     // Getter
@@ -28,8 +29,6 @@ public class Itinerary {
     }
 
     public String formatByArrival() {
-        
-
 
     }
 
@@ -37,6 +36,11 @@ public class Itinerary {
     // The second array holds months.
     // The third array holds formatted locations occurring in the year/month
     String[][][] byDate() {
+        for(int i = 0; i < 3; i++){
+            for(int j = 0; i <12; i++){
+                
+            }
+        }
     }
 
 }

@@ -20,7 +20,10 @@ public class Trip {
 
     // Constructor
     public Trip(String[] array) {
-        String new_trip;
+        arrival = array[0];
+        departure = array[1];
+        city = array [2];
+        country = array[3];
     }
 
     // Given a date string, return just the year
@@ -43,7 +46,8 @@ public class Trip {
     // Return a formatted string of key/value pairs, with commas
     // between each. See the output for an example.
     public String formatTrip() {
-        
+        return this.getArrival() + " (Arrival), " + this.getDeparture() + " (Departure), " + this.getCity() + " (City), " + this.getCountry() + " (Country), "; 
+
     }
 
     // Getter
