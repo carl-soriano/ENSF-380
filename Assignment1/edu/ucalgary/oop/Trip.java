@@ -14,7 +14,7 @@ public class Trip {
     // Returns a string in the format of:
     // value (key)
     public static String fmtString(String key, String value) {
-        String new_data = value + "(" + key + ")"; 
+        String new_data = value + " (" + key + ")"; 
         return new_data; 
     }
 
@@ -38,7 +38,7 @@ public class Trip {
     // Since it is an int, a date like "2022-01-12" returns 1
     public static int getMonth(String date) {
         String str; 
-        str = date.substring(5,6); 
+        str = date.substring(5,7); 
         int new_month = Integer.valueOf(str);
         return new_month;
     }
