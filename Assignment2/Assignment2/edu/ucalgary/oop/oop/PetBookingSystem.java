@@ -1,4 +1,4 @@
-package edu.ucalgary.oop;
+package Assignment2.edu.ucalgary.oop.oop;
 /*
 Copyright Ann Barcomb and Emily Marasco, 2021-2023
 All rights reserved.
