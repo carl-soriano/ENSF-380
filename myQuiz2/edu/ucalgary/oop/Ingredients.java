@@ -49,7 +49,7 @@ class Ingredients {
      * @throws ArrayIndexOutOfBoundsException if index is larger than 9 or less than 0
     */
     public String[] getIngredientByIndex(int index) throws ArrayIndexOutOfBoundsException {
-        if (index > 10 || index < 1) {
+        if (index > 10|| index < 0) {
             throw new ArrayIndexOutOfBoundsException("Only 10 ingredients are permitted");
         }
 
